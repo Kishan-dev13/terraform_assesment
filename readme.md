@@ -21,7 +21,7 @@ cd <git-repo-url>
 ```bash
 aws configure
 ```
-After this you have to give  AWS access key, secret key and AWS region.
+After this you have to configure AWS access key, secret key and AWS region.
 
 2. Initialize Terraform:
 ```bash
@@ -60,7 +60,7 @@ At the root level, the main.tf file serves as the entry point, defining and refe
 │       └── variables.tf
 ├── data.tf
 ├── main.tf
-├── outputs.tf
+└──outputs.tf
 ```
 
 ## Running Terraform
@@ -69,13 +69,13 @@ At the root level, the main.tf file serves as the entry point, defining and refe
 ```bash
 terraform plan
 ```
-Enter your Ip address with subnet mask length(example: 173.170.142.167/32), enter your Availabily zone1 within aws region(example: us-east-1a) and enter your Availabily zone2 within aws region(example: us-east-1b) after this there might be an option to select the provider aws region(example: us-east-1)
+Enter your Ip address with subnet mask length **(example:173.170.142.167/32)**, enter your Availabily zone1 within aws region **(example: us-east-1a)** and enter your Availabily zone2 within aws region **(example: us-east-1b)** Optional(after this there might be an option to select the provider aws region(example: us-east-1))
 
 2. Apply the Terraform configuration:
 ```bash
 terraform apply
 ```
-Enter your Ip address with subnet mask length(example: 173.170.142.167/32), enter your Availabily zone1 within aws region(example: us-east-1a) and enter your Availabily zone2 within aws region(example: us-east-1b) after this there might be an option to select the provider aws region(example: us-east-1)
+Enter your Ip address with subnet mask length **(example:173.170.142.167/32)**, enter your Availabily zone1 within aws region **(example: us-east-1a)** and enter your Availabily zone2 within aws region **(example: us-east-1b)** Optional(after this there might be an option to select the provider aws region(example: us-east-1))
 
 Type `yes` when prompted to confirm.
 
